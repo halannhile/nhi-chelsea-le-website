@@ -18,3 +18,5 @@ url_video: ""
 ---
 
 Looking at a classification problem using linear discriminant analysis, quadratic discriminant analysis. Analysing multivariate data analysis using Principle Component Analysis for dimensionality reduction. 
+
+
