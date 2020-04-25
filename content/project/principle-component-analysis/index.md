@@ -1,6 +1,5 @@
 ---
 date: "2020-04-25"
-external_link: http://example.org
 image:
   caption: ""
   focal_point: Smart
