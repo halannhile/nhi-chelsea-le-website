@@ -1,28 +1,23 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My interests include actuarial science, computing statistics, machine learning, forecasting and econometrics. 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Bachelor of Actuarial Science
+    institution: Monash University
+    year: 2021
+
 email: ""
-interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Actuarial Science 
+- Computing Statistics
+- Machine Learning 
+- Forecasting 
+- Econometrics 
 organizations:
-- name: Stanford University
-  url: ""
-role: Professor of Artificial Intelligence
+- name: Monash University
+  url: "https://www.monash.edu/"
+role: Actuarial Student
 social:
 - icon: envelope
   icon_pack: fas
@@ -37,12 +32,14 @@ social:
   icon_pack: fab
   link: https://github.com/gcushen
 superuser: true
-title: Nelson Bighetti
+title: Nhi (Chelsea) Le
 user_groups:
 - Researchers
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hello, thanks for visiting my website. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am doing my Bachelor of Actuarial Science at Monash University, majoring also in Econometrics and Business Analytics. My goal is to redefine the ways that actuaries work, by incorporating machine learning and data science into the traditional types of work that we normally do. Further down the line, I wish to complete a PhD in Statistics, Econometrics, Business Statistics or Financial Maths, depending on where my life will head towards in the next couple of years. And then eventually, my dream is to become an academic, write textbooks and contribute to the education of future Vietnamese actuaries. 
+
+Outside my studies, I love playing the piano, enjoying nature and reading a good textbook or non-fiction work. 
