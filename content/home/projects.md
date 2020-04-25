@@ -32,6 +32,10 @@ subtitle = ""
   [[content.filter_button]]
     name = "Virtual Internships"
     tag = "Virtual Internships"
+    
+  [[content.filter_button]]
+    name = "Machine Learning"
+    tag = "Machine Learning"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
