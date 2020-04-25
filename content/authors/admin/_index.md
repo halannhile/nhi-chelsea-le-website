@@ -18,20 +18,21 @@ interests:
 organizations:
 - name: Monash University 
   url: "www.monash.edu"
+organizations:
+- name: Monash Business School, Monash University
+  url: "https://www.monash.edu/business/home"
+
 role: Actuarial Student 
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
-- icon: twitter
+  link: "mailto:halannhile@gmail.com"
+- icon: linkedin
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://www.linkedin.com/in/nhi-hl-le/
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/halannhile
 superuser: true
 title: Nhi (Chelsea) Le
 user_groups:
@@ -41,6 +42,6 @@ user_groups:
 
 Hello, thanks for visiting my website. 
 
-I am doing my Bachelor of Actuarial Science at Monash University, majoring also in Econometrics and Business Analytics. My goal is to redefine the ways that actuaries work, by incorporating machine learning and data science into the traditional types of work that we normally do. Further down the line, I wish to complete a PhD in Statistics, Econometrics, Business Statistics or Financial Maths, depending on where my life will head towards in the next couple of years. And then eventually, my dream is to become an academic, write textbooks and contribute to the education of future Vietnamese actuaries. 
+I am doing my Bachelor of Actuarial Science at Monash University, majoring in Business Analytics. My goal is to redefine the ways that actuaries work, by incorporating machine learning, statistical computing and data analytics into the traditional types of work that we normally do. Further down the line, I wish to complete a PhD in Computing Statistics or Financial Maths, depending on where my life will head towards in the next couple of years. My ultimate dream is to become an academic, write textbooks and contribute to the education of future Vietnamese statisticians and actuaries. 
 
-Outside my studies, I love playing the piano, enjoying nature and reading a good textbook or non-fiction work. 
+Outside my studies, I love playing the piano, enjoying nature and reading a good textbook. 
