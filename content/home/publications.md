@@ -1,18 +1,18 @@
 +++
-# A Recent Blog Posts section created with the Pages widget.
-# This section displays recent blog posts from `content/post/`.
+# A Recent Publications section created with the Pages widget.
+# This section displays recent blog posts from `content/publication/`.
 
 widget = "pages"  
-headless = true  
+headless = true
 active = true  
-weight = 40  
+weight = 60  
 
-title = "Recent Posts"
+title = "Recent Publications"
 subtitle = ""
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "post"
+  page_type = "publication"
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 5
@@ -44,7 +44,7 @@ subtitle = ""
   #   Uncomment (by removing `#`) an option to apply it.
   #   Choose a light or dark text color by setting `text_color_light`.
   #   Any HTML color name or Hex value is valid.
-  
+    
   # Background color.
   # color = "navy"
   
@@ -66,3 +66,7 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
+
+{{% alert note %}}
+Quickly discover relevant content by [filtering publications]({{< ref "/publication/_index.md" >}}).
+{{% /alert %}}
