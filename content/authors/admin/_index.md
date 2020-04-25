@@ -6,18 +6,19 @@ education:
   courses:
   - course: Bachelor of Actuarial Science
     institution: Monash University
-    year: 2021
+    year: 20121
 
-email: ""
+email: "halannhile@gmail.com"
+interests:
 - Actuarial Science 
-- Computing Statistics
+- Computing Statistics 
 - Machine Learning 
 - Forecasting 
 - Econometrics 
 organizations:
-- name: Monash University
-  url: "https://www.monash.edu/"
-role: Actuarial Student
+- name: Monash University 
+  url: "www.monash.edu"
+role: Actuarial Student 
 social:
 - icon: envelope
   icon_pack: fas
