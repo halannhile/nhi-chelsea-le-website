@@ -27,9 +27,9 @@ math: true
 projects: 
 publishDate: 
 slides: 
-summary: Monash Actuarial Students Society Podcast Series: Day in the Life of an Actuary: Episode 1: featuring Jessica Tran and Jasleen Gill from Deloitte Actuarial 
+summary: Monash Actuarial Students Society Podcast: Day in the Life of an Actuary Ep. 1: featuring Jessica Tran and Jasleen Gill from Deloitte Actuarial  
 tags: []
-title: MASS Podcast 1: DEloitte
+title: MASS Podcast 1: Deloitte
 url_code: 
 url_pdf: 
 url_slides: 
