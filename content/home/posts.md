@@ -5,9 +5,9 @@
 widget = "pages"  
 headless = true  
 active = true  
-weight = 40  
+weight = 4  
 
-title = "Recent Posts"
+title = "Posts"
 subtitle = ""
 
 [content]

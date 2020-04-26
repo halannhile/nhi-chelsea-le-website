@@ -5,7 +5,7 @@
 widget = "pages"  
 headless = true  
 active = true  
-weight = 50  
+weight = 5  
 
 title = "Recent & Upcoming Talks"
 subtitle = ""

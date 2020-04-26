@@ -3,7 +3,7 @@
 widget = "experience"  
 headless = true  
 active = true  
-weight = 20  
+weight = 2  
 
 title = "Experience"
 subtitle = ""
@@ -42,6 +42,7 @@ date_format = "Jan 2006"
   date_start = "2019-09-01"
   date_end = ""
   description = """
+  Responsibilities include:
   
   * Manage grants and budgeting for MUISS
   * Authorize, approve and keep record of all financial activities (purchase orders, invoices, reimbursements, etc.)

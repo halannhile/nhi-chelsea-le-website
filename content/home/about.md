@@ -3,7 +3,7 @@
 widget = "about"  
 headless = true 
 active = true  
-weight = 10 
+weight = 1 
 title = "Biography"
 
 # Choose the user profile to display

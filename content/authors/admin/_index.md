@@ -6,7 +6,7 @@ education:
   courses:
   - course: Bachelor of Actuarial Science
     institution: Monash University
-    year: 20121
+    year: 2021
 
 email: "halannhile@gmail.com"
 interests:
