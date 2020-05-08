@@ -12,6 +12,7 @@ subtitle = ""
 
 date_format = "Jan 2006"
 
+
 # Experiences.
 #   Add/remove as many `[[experience]]` blocks below as you like.
 #   Required fields are `title`, `company`, and `date_start`.
