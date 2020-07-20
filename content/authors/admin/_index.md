@@ -43,6 +43,6 @@ user_groups:
 
 Hello, thanks for visiting my website. 
 
-I am doing my Bachelor of Actuarial Science at Monash University, majoring in Business Analytics. My goal is to redefine the ways that actuaries work, by incorporating machine learning, computational statistics and data analytics into the traditional types of work that we normally do. Further down the line, I wish to complete a PhD in Computational Statistics or Financial Maths, depending on where my life will head towards in the next couple of years. My ultimate dream is to become an academic, write textbooks and contribute to the education of future Vietnamese statisticians and actuaries. 
+I am doing my Bachelor of Actuarial Science at Monash University, majoring in Business Analytics. My goal is to redefine the ways that actuaries work, by incorporating machine learning, computational statistics and data analytics into the traditional types of work that we normally do. Further down the line, I wish to complete a PhD program to gain academic research and teaching experience. My ultimate dream is to become an academic, write textbooks and contribute to the education of future Vietnamese statisticians and data analysts. 
 
-Outside my studies, I love playing the piano, enjoying nature and reading a good textbook. 
+Outside my studies, I love playing the piano, enjoying nature and reading a good book. 
