@@ -1,7 +1,13 @@
-widget = "featurette"
-headless = true  # This file represents a page section.
++++
+# Skills widget.
+widget = "featurette"  
+headless = true  
+active = true  
+weight = 1  
 
-# ... Put Your Section Options Here (title etc.) ...
+title = "Skills"
+subtitle = ""
+
 
 # Showcase personal skills or business features.
 # Add/remove as many `[[feature]]` blocks below as you like.
