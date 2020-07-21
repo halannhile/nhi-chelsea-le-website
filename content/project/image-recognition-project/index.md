@@ -1,19 +1,19 @@
 ---
-date: "2020-04-25"
+date: "2020-05-01"
 image:
   caption: ""
   focal_point: Smart
-summary: Prediction hand-drawn sketches  
+summary: Predicting hand-drawn sketches  
 tags:
 - Machine Learning
 
-title: Kaggle Competition: Image Recognition
+title: Image Recognition Kaggle Competition
 
 summary: My team's final project for ETC3250 Business at [Monash Business School](https://www.monash.edu/business/home)
 url_code: ""
 url_custom: 
 url_pdf: "pdf/image-recognition-project.pdf"
-url_slides: ""
+url_slides: "slides/image-recognition-project.pdf"
 url_video: ""
 ---
 
