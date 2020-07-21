@@ -25,12 +25,6 @@ subtitle = ""
   description = "ggplot2 + shiny + plotly"  
   
 [[feature]]
-  icon = "calculator"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "Econometrics + Forecasting"
-  
-[[feature]]
   icon = "python"
   icon_pack = "fas"
   name = "Python"
@@ -40,6 +34,14 @@ subtitle = ""
   icon = "laptop-code"
   icon_pack = "fas"
   name = "Machine Learning"
-  description = "Neural Networks + XGBoost + High Dimension"
+  description = "High Dimension + Supervised/Unsupervised Learning"
+  
+[[feature]]
+  icon = "calculator"
+  icon_pack = "fas"
+  name = "Statistics"
+  description = "Econometrics + Forecasting"
+
+
   
 +++
