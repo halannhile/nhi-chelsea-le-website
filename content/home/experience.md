@@ -27,10 +27,10 @@ date_format = "Jan 2006"
   date_start = "2019-09-01"
   date_end = ""
   description = """
-  
+  <br>
   * Liaised between more than 200 MASS members and 16 corporate sponsors. 
   * Obtained two sponsorship upgrades and two new corporate sponsors for MASS in 2020. 
-  * Co-initiated and hosted the MASS Podcast Series – Day in the Life of an Actuary. 
+  * Co-initiated and hosted the MASS Podcast Series - Day in the Life of an Actuary. 
   
   """
 
@@ -42,7 +42,7 @@ date_format = "Jan 2006"
   date_start = "2019-09-01"
   date_end = ""
   description = """
-  
+  <br>
   * Managed financial transactions for all MUISS events catering for more than 30,000 international students at Monash University, Clayton Campus. 
   * Successfully appealed for an 11% increase in budget for MUISS in 2020.
 
@@ -56,8 +56,8 @@ date_format = "Jan 2006"
   date_start = "2020-07-01"
   date_end = ""
   description = """
-  
-  * Impetus Consulting Group is a not-¬for-profit organisation that provides pro-¬bono consulting services to charities and social enterprises in Australia. 
+  <br> 
+  * Impetus Consulting Group is a not-for-profit organisation that provides pro-bono consulting services to charities and social enterprises in Australia. 
 
   """
   
@@ -69,7 +69,7 @@ date_format = "Jan 2006"
   date_start = "2020-05-01"
   date_end = "2020-05-01"
   description = """
-  
+  <br>
   * Tested out all modules and provided improvement suggestions for Quantium’s Data Analytics Virtual Internship.
 
   """  
