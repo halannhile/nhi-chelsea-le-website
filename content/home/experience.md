@@ -27,11 +27,10 @@ date_format = "Jan 2006"
   date_start = "2019-09-01"
   date_end = ""
   description = """
-  Responsibilities include:
   
-  * Liaise between MASS and corporate sponsors
-  * Negotiate sponsorship arrangements and raise funds for the operation of MASS
-  * Provide the structure for and navigate the process of networking between members and sponsors
+  * Liaised between more than 200 MASS members and 16 corporate sponsors. 
+  * Obtained two sponsorship upgrades and two new corporate sponsors for MASS in 2020. 
+  * Co-initiated and hosted the MASS Podcast Series – Day in the Life of an Actuary. 
   
   """
 
@@ -43,12 +42,36 @@ date_format = "Jan 2006"
   date_start = "2019-09-01"
   date_end = ""
   description = """
-  Responsibilities include:
   
-  * Manage grants and budgeting for MUISS
-  * Authorize, approve and keep record of all financial activities (purchase orders, invoices, reimbursements, etc.)
-  * Prepare month financial statements reporting to Monash Student Association’s Finance Department
-  * Ensure MUISS audits are successful
+  * Managed financial transactions for all MUISS events catering for more than 30,000 international students at Monash University, Clayton Campus. 
+  * Successfully appealed for an 11% increase in budget for MUISS in 2020.
+
   """
+  
+[[experience]]
+  title = "Project Consultant"
+  company = "Impetus Consulting Group"
+  company_url = "https://www.impetus.org.au/"
+  location = "Melbourne"
+  date_start = "2020-07-01"
+  date_end = ""
+  description = """
+  
+  * Impetus Consulting Group is a not-¬for-profit organisation that provides pro-¬bono consulting services to charities and social enterprises in Australia. 
+
+  """
+  
+[[experience]]
+  title = "Program Tester"
+  company = "InsideSherpa"
+  company_url = "https://www.insidesherpa.com/"
+  location = "Melbourne"
+  date_start = "2020-05-01"
+  date_end = "2020-05-01"
+  description = """
+  
+  * Tested out all modules and provided improvement suggestions for Quantium’s Data Analytics Virtual Internship.
+
+  """  
 
 +++
