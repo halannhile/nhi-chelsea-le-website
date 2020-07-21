@@ -40,6 +40,10 @@ subtitle = ""
   [[content.filter_button]]
     name = "Data Analytics"
     tag = "Data Analytics"
+
+  [[content.filter_button]]
+    name = "Extracurriculars"
+    tag = "Extracurriculars"
     
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
