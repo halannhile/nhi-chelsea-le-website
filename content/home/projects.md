@@ -26,10 +26,6 @@ subtitle = ""
     tag = "*"
   
   [[content.filter_button]]
-    name = "Online Courses"
-    tag = "Online Courses"
-  
-  [[content.filter_button]]
     name = "Virtual Internships"
     tag = "Virtual Internships"
     
