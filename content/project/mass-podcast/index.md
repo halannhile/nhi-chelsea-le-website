@@ -13,8 +13,8 @@ summary: Day in the Life of an Actuary Podcast Series, [Monash Actuarial Student
 url_code: ""
 url_custom: 
 url_pdf: ""
-url_slides: "https://www.youtube.com/watch?v=Nhzhl80hYTQ"
-url_video: ""
+url_slides: ""
+url_video: "https://www.youtube.com/watch?v=Nhzhl80hYTQ"
 ---
 
 With everything moving online due to the impact of COVID-19, the Monash Actuarial Students Society (MASS) team decided to come up with brand new initiatives, one of which is the Day in the Life of an Actuary podcast series. 
