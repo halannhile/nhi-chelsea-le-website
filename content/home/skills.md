@@ -42,6 +42,10 @@ subtitle = ""
   name = "Statistics"
   description = "Econometrics + Forecasting"
 
-
+[[feature]]
+  icon = "database"
+  icon_pack = "fas"
+  name = "SQL"
+  description = "Ancora Imparo - I am still learning"
   
 +++
