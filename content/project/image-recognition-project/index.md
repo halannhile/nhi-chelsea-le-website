@@ -13,7 +13,7 @@ summary: My team's final project for ETC3250 Business at [Monash Business School
 url_code: ""
 url_custom: 
 url_pdf: "pdf/image-recognition-project.pdf"
-url_slides: "slides/image-recognition-project.pdf"
+url_slides: "slides/slides_trial.html"
 url_video: ""
 ---
 
@@ -21,6 +21,6 @@ url_video: ""
 <br> 
 * Machine learning models built include: Convolutional Neural Networks (93% accuracy), Random Forests, Extreme Gradient Boosting (XGBoost). 
 <br> 
-* The data can be found here[https://github.com/googlecreativelab/quickdraw-dataset]. 
+* The data can be found here : https://github.com/googlecreativelab/quickdraw-dataset. 
 
 
