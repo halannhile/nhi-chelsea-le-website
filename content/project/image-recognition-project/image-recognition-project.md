@@ -13,7 +13,7 @@ summary: My team's final project for ETC3250 Business at [Monash Business School
 url_code: ""
 url_custom: 
 url_pdf: "pdf/image-recognition-project.pdf"
-url_slides: "file:///C:/Users/FSC/AppData/Local/Temp/Rar$EXa18920.1822/slides/slides_trial.html#1"
+url_slides: ""
 url_video: ""
 ---
 
