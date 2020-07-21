@@ -29,3 +29,5 @@ subtitle = ""
   icon_pack = "fas"
   name = "Photography"
   description = "10%"
+
++++
