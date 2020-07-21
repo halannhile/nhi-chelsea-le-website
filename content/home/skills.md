@@ -15,19 +15,31 @@ subtitle = ""
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R"
-  description = "90%"
+  name = "R Programming"
+  description = "tidyverse + tensorflow + keras + tidymodels + fable"
   
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  name = "Data Visualisation"
+  description = "ggplot2 + shiny + plotly"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "calculator"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Statistics"
+  description = "Econometrics + Forecasting"
+  
+[[feature]]
+  icon = "python"
+  icon_pack = "fas"
+  name = "Python"
+  description = "numpy + pandas + scikit-learn + tensorflow + keras + matplotlib"
 
+[[feature]]
+  icon = "laptop-code"
+  icon_pack = "fas"
+  name = "Machine Learning"
+  description = "Neural Networks + XGBoost + High Dimension"
+  
 +++
