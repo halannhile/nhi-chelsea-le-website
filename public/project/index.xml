@@ -5,12 +5,48 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
+    
+    <item>
+      <title>Image Recognition Kaggle Competition</title>
+      <link>/project/image-recognition-project/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/image-recognition-project/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Predicting hand-drawn sketches from people playing the Pictionary game.
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Machine learning models built include: Convolutional Neural Networks (93% accuracy), Random Forests, Extreme Gradient Boosting (XGBoost). 
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;The data can be found here : &lt;a href=&#34;https://github.com/googlecreativelab/quickdraw-dataset&#34;&gt;https://github.com/googlecreativelab/quickdraw-dataset&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>KPMG Data Analytics Virtual Internship</title>
+      <link>/project/kpmg-vi/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/kpmg-vi/</guid>
+      <description>&lt;p&gt;The KPMG Data Analytics Virtual Internship Program offered by InsideSherpa has 3 modules:&lt;/p&gt;
+&lt;br&gt; 
+&lt;ol&gt;
+&lt;li&gt;Data quality assessment: involves assessment of data quality and completeness in preparation for analysis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt; 
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Data insights: involves identifying high-values customers based on customers demographics and attributes. I used R for this task.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt; 
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Data insights and presentation: producing data visualisations to present key insights and recommendations to the client. I used Tableau for this task.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Principle Component Analysis</title>
@@ -22,15 +58,54 @@
     </item>
     
     <item>
-      <title>Internal Project</title>
-      <link>/project/demo-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/demo-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <title>MASS Day in the Life of an Actuary Podcast Series</title>
+      <link>/project/mass-podcast/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/project/mass-podcast/</guid>
+      <description>&lt;p&gt;With everything moving online due to the impact of COVID-19, the Monash Actuarial Students Society (MASS) team decided to come up with brand new initiatives, one of which is the Day in the Life of an Actuary podcast series.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.monashactuary.com.au/podcasts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;“Day in the Life of an Actuary”&lt;/a&gt; is a series whereby MASS interview representatives from sponsor firms to discuss the many topics that are of greatest interest to our actuarial student members. This also gives members an insight into what it is like to work as an actuary at the respective firms.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Episode 1: Deloitte with Jessica Tran and Jasleen Gill&lt;/strong&gt;:&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;For this episode, we had the wonderful opportunity to interview Jessica Tran and Jasleen Gill, Graduates and Actuarial Analysts at Deloitte. Together, we were engaged in a very informative, thought-provoking but all the while, interesting conversation about university experiences, internship and graduate applications, the actuarial industry and work of an actuary.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Episode 2: KPMG with Jordan Forrest and Clemence Lau&lt;/strong&gt;&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;In the second episode of our podcast series, “Day in the Life of an Actuary”, we sat down with Jordan Forrest and Clemence Lau who are Actuarial Consultants at KPMG Australia. Together, we touched on multiple facets of their professional career, ranging from their experiences at university, internship and graduate applications to the actuarial industry and the work of an actuarial consultant at KPMG.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Episode 3: UniSuper with Young Tan and Vivian Dang&lt;/strong&gt;&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;In our third episode of our “Day in the Life of an Actuary”, we dived into the world of superannuation with Young Tan and Vivian Dang from UniSuper. With a more industry focussed episode, we discussed the projects and unique challenges of working in the superannuation industry and the role of an actuary in this field.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;It was such a rewarding feeling to receive positive feedback from the students, sponsors and academic staff about our podcast series. This project proved to me that while we cannot control the current situation, we can choose to take initiative and make the best out of the matter at hand.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MUISS Sponsorship Project</title>
+      <link>/project/muiss-sponsorship/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/project/muiss-sponsorship/</guid>
+      <description>&lt;p&gt;With the impact of COVID-19, Monash University announced several significant cuts in its financial expenses, one of which is funding for clubs and societies on campus.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;Monash University International Students&amp;rsquo; Society (MUISS) has long been fully dependent on the university&amp;rsquo;s central fund for all our activities throughout the year. Therefore, it was undoubtedly challenging for us to continue serving the international students cohort at Monash with such a low budget.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;As the Treasurer for MUISS, I saw it as my responsibility to make sure that we become more financially independent, not only in 2020 but also in the years to come. Using the experience I have gained working with sponsors over at the Monash Actuarial Students Society (MASS), I initiated a sponsorship project to find external organisations that would be interested in a sponsorship agreement with MUISS.&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;The outcome of the project is still to be finalised, but I have started to receive expressions of interest from some of the organisations that I contacted. It would be so rewarding to leave MUISS at the end of this year with some kind of legacy for future committees.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quantium Data Analytics Virtual Internship</title>
+      <link>/project/quantium-vi/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/project/quantium-vi/</guid>
+      <description>&lt;p&gt;Earlier this year, I was invited to be a program tester for an exiciting data analytics virtual internship soon to be launched on InsideSherpa. To my complete surprise, this program is from Quantium - a renowned data science company recognised in Australia and globally. Ever since I started my first year at Monash, I have always had an immense passion for data analytics, and so naturally, being able to work at Quantium some day has been my biggest dream.&lt;/p&gt;
+&lt;p&gt;This experience, therefore, was so rewarding and eye-opening for me. Not only was I among the first few people to experience the program prior to its launch day, I was also given the opportunity to provide suggestions on where and how the internship can be further improved. Many of my recommendations ended up being implemented by the InsideSherpa and Quantium teams, which is probably one of the proudest moments of my university years so far.&lt;/p&gt;
+&lt;p&gt;The program gave me invaluable insights on the type of work that an analyst does at Quantium. In particular, I was able to learn so much from how they tackle big and untidy datasets to produce commercial recommendations to the client. I hope to continue sharpening my data analytics and coding skills to hopefully, someday, be able to work at Quantium.&lt;/p&gt;
+&lt;p&gt;The materials (slides, videos) attached to this post are my attempts at the internship only. I will try and set aside some time to walk you through the suggested answers by Quantium as well, so make sure to keep an eye out for that if you are interested!&lt;/p&gt;
 </description>
     </item>
     
