@@ -18,16 +18,10 @@
   weight = 3
   
 [[main]]
-  identifier = "posts"
   name = "Posts"
-  url = "#posts"
+  url = "post/"
   weight = 4
 
-[[main]]
-  parent = "posts"
-  name = "Actuarial Science"
-  url = "#actuarial-science"
-  weight = 4
 
 [[main]]
   name = "Contact"
