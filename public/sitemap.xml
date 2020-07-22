@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tag/machine-learning/</loc>
+    <lastmod>2020-07-22T21:31:33+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
     <lastmod>2020-07-22T21:36:58+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-22T21:31:33+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ml-1/trial/</loc>
+    <lastmod>2020-07-22T21:31:33+10:00</lastmod>
   </url>
   
   <url>
@@ -23,17 +38,7 @@
   </url>
   
   <url>
-    <loc>/tag/machine-learning/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/project/</loc>
-    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
   
