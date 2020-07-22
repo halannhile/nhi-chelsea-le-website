@@ -5,9 +5,9 @@
 widget = "pages"  
 headless = true  
 active = true  
-weight = 1  
+weight = 4  
 
-title = "Actuarial Science"
+title = "Posts"
 subtitle = ""
 
 [content]
