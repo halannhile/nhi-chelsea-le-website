@@ -1,14 +1,16 @@
 ---
-title: trial 3
+title: 'Machine Learning Crash Course P.1: Overview'
 author: 'Chelsea Le '
 date: '2020-07-22'
-slug: trial-3
-categories: []
-tags: []
+slug: machine-learning-crash-course-p-1-overview
+categories:
+  - R
+tags:
+  - Machine Learning
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2020-07-22T21:45:01+10:00'
+lastmod: '2020-07-22T21:49:46+10:00'
 featured: no
 image:
   caption: ''
