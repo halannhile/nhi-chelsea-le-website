@@ -3,7 +3,7 @@
 widget = "featurette"  
 headless = true  
 active = true  
-weight = 1  
+weight = 2  
 
 title = "Skills"
 subtitle = ""

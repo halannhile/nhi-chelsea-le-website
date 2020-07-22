@@ -3,7 +3,7 @@
 widget = "contact"  
 headless = true  
 active = true  
-weight = 8  
+weight = 50  
 
 title = "Contact"
 subtitle = ""

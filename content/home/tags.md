@@ -3,7 +3,7 @@
 widget = "tag_cloud"  
 headless = true  
 active = true  
-weight = 7  
+weight = 90  
 
 title = "Popular Topics"
 subtitle = ""

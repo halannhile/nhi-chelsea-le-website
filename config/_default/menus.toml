@@ -5,28 +5,28 @@
 [[main]]
   name = "Skills"
   url = "#skills"
-  weight = 1
+  weight = 10
   
 [[main]]
   name = "Experience"
   url = "#experience"
-  weight = 2
+  weight = 20
 
 [[main]]
   name = "Projects"
   url = "#projects"
-  weight = 3
+  weight = 30
   
 [[main]]
   name = "Posts"
   url = "#posts"
-  weight = 4
+  weight = 40
 
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 5
+  weight = 50
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

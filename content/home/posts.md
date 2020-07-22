@@ -5,7 +5,7 @@
 widget = "pages"  
 headless = true  
 active = true  
-weight = 4  
+weight = 40  
 
 title = "Posts"
 subtitle = ""
