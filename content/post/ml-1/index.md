@@ -27,7 +27,22 @@ I am definitely not an expert in the field, just a student who has really enjoye
 
 The first post is simply just an overview of what I will be covering throughout the whole crash course. [This page](https://vas3k.com/blog/machine_learning/) has a really nice introduction to machine learning for beginners, which I would definitely you check out first. 
 
+Machine Learning, AI, Deep Learning are oftentimes confused and used interchangeably by some people. Yet they are very different areas of study: 
+
 ![](/post/2020-07-22-trial-2_files/ml-1-overview.png)
 
-.font_tiny[Source: https://vas3k.com/blog/machine_learning/]
+Source: [Machine Learning for Everyone](https://vas3k.com/blog/machine_learning/)
+
+The highlighted topics in the image above are those that I will touch on in future posts (since I have not learned about the remaining ones yet). There will also be additional topics to this crash course. You can find the full list below: 
+
+![](/ml-1/index_files/1.png)
+![](/ml-1/index_files/2.png)
+![](/ml-1/index_files/3.png)
+![](/ml-1/index_files/4.png)
+![](/ml-1/index_files/5.png)
+![](/ml-1/index_files/6.png)
+![](/ml-1/index_files/7.png)
+![](/ml-1/index_files/8.png)
+
+
 
