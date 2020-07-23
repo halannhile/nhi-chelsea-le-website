@@ -36,12 +36,19 @@ Source: [Machine Learning for Everyone](https://vas3k.com/blog/machine_learning/
 The highlighted topics in the image above are those that I will touch on in future posts (since I have not learned about the remaining ones yet). There will also be additional topics to this crash course. You can find the full list below: 
 
 ![](/ml-1/index_files/1.png)
+
 ![](/ml-1/index_files/2.png)
+
 ![](/ml-1/index_files/3.png)
+
 ![](/ml-1/index_files/4.png)
+
 ![](/ml-1/index_files/5.png)
+
 ![](/ml-1/index_files/6.png)
+
 ![](/ml-1/index_files/7.png)
+
 ![](/ml-1/index_files/8.png)
 
 
