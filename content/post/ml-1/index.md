@@ -19,7 +19,7 @@ image:
 projects: []
 ---
 
-Welcome to my Machine Learning Crash Course! 
+### Welcome to my Machine Learning Crash Course! 
 
 In this series, I will attempt to explain fundamental concepts in machine learning to you in understandable terms that are also not oversimplified. 
 
@@ -33,7 +33,7 @@ Machine Learning, AI, Deep Learning are oftentimes confused and used interchange
 
 ![](/post/2020-07-22-trial-2_files/ml-1-overview.png)
 
-Source: [Machine Learning for Everyone](https://vas3k.com/blog/machine_learning/)
+Image credit: [Machine Learning for Everyone](https://vas3k.com/blog/machine_learning/)
 
 The highlighted topics in the image above are those that I will touch on in future posts (since I have not learned about the remaining ones yet). There will also be additional topics to this crash course. You can find the full list below: 
 
@@ -53,5 +53,17 @@ The highlighted topics in the image above are those that I will touch on in futu
 
 ![png](./list-8.png)
 
+### Credit
 
+I owe the majority of my machine learning knowledge and the inspiration for this course mainly to two sources: 
 
+## 1. Monash University's ETC3250: Introduction to Machine Learning: unit led by Professor Di Cook: 
+
+* [Course website](https://iml.numbat.space/)
+* [Professor Di Cook's website](http://dicook.org/)
+
+## 2. Introduction to Statistical Learning with Applications in R: textbook written by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani: 
+
+* [Link to textbook](http://faculty.marshall.usc.edu/gareth-james/ISL/)
+
+Where necessary, I will also credit additional sources of information in my future posts. Thank you for your interest in this Machine Learning Crash Course. I hope you will find it useful in some way.
