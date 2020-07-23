@@ -31,26 +31,27 @@ Machine Learning, AI, Deep Learning are oftentimes confused and used interchange
 
 ![](/ml-1/index_files/ml-1-overview.png)
 
+![](/post/2020-07-22-trial-2_files/ml-1-overview.png)
+
 Source: [Machine Learning for Everyone](https://vas3k.com/blog/machine_learning/)
 
 The highlighted topics in the image above are those that I will touch on in future posts (since I have not learned about the remaining ones yet). There will also be additional topics to this crash course. You can find the full list below: 
 
-![](/ml-1/index_files/list-1.png)
+![png](./list-1.png)
 
-![](/ml-1/index_files/list-2.png)
+![png](./list-2.png)
 
-![](/ml-1/index_files/list-3.png)
+![png](./list-3.png)
 
-![](/ml-1/index_files/list-4.png)
+![png](./list-4.png)
 
-![](/ml-1/index_files/list-5.png)
+![png](./list-5.png)
 
-![](/ml-1/index_files/list-6.png)
+![png](./list-6.png)
 
-![](/ml-1/index_files/list-7.png)
+![png](./list-7.png)
 
-![](/ml-1/index_files/list-8.png)
-
+![png](./list-8.png)
 
 
 
