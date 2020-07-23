@@ -29,5 +29,5 @@ The first post is simply just an overview of what I will be covering throughout 
 
 ![](/post/2020-07-22-trial-2_files/ml-1-overview.png)
 
-.footnote[.font_tiny[Source: https://vas3k.com/blog/machine_learning/]]
+.font_tiny[Source: https://vas3k.com/blog/machine_learning/]
 
