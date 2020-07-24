@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-07-22T21:49:46+10:00</lastmod>
+    <loc>/tag/machine-learning/</loc>
+    <lastmod>2020-07-23T19:24:27+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/machine-learning/</loc>
+    <loc>/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/</loc>
+    <lastmod>2020-07-23T19:24:27+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-07-23T19:24:27+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-23T19:24:27+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <lastmod>2020-07-22T21:49:46+10:00</lastmod>
   </url>
   
@@ -18,17 +33,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2020-07-22T21:49:46+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/category/r/</loc>
-    <lastmod>2020-07-22T21:49:46+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-07-22T21:49:46+10:00</lastmod>
   </url>
   

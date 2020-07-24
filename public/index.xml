@@ -13,30 +13,176 @@
     </image>
     
     <item>
-      <title>Machine Learning Crash Course P.1: Overview</title>
+      <title>Machine Learning Crash Course P.1: Introduction to Statistical Learning</title>
+      <link>/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/</guid>
+      <description>
+
+
+&lt;div id=&#34;what-is-statistical-learning&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;What is Statistical Learning?&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Given the &lt;strong&gt;input information X&lt;/strong&gt; (also called predictors, (independent) variables, features) and &lt;strong&gt;output information Y&lt;/strong&gt; (also called response or dependent variable),&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning Crash Course: Overview</title>
       <link>/post/machine-learning-crash-course-p-1-overview/</link>
       <pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/post/machine-learning-crash-course-p-1-overview/</guid>
-      <description>&lt;h3 id=&#34;welcome-to-my-machine-learning-crash-course&#34;&gt;Welcome to my Machine Learning Crash Course!&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;welcome-to-my-machine-learning-crash-course&#34;&gt;&lt;strong&gt;Welcome to my Machine Learning Crash Course!&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;In this series, I will attempt to explain fundamental concepts in machine learning to you in understandable terms that are also not oversimplified.&lt;/p&gt;
 &lt;p&gt;I am definitely not an expert in the field, just a student who has really enjoyed learning about this area. My coding journey started quite late, only a bit more than half a year ago, when I entered the second semester of my first year at university. So if you are also just starting out, believe that you can and will get better at it, so long as the passion is there.&lt;/p&gt;
 &lt;p&gt;The first post is simply just an overview of what I will be covering throughout the whole crash course. 
-&lt;a href=&#34;https://vas3k.com/blog/machine_learning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This page&lt;/a&gt; has a really nice introduction to machine learning for beginners, which I would definitely you check out first.&lt;/p&gt;
+&lt;a href=&#34;https://vas3k.com/blog/machine_learning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;This page&lt;/a&gt; has a really nice introduction to machine learning for beginners, which I would definitely recommend you check out first.&lt;/p&gt;
 &lt;p&gt;Machine Learning, AI, Deep Learning are oftentimes confused and used interchangeably by some people. Yet they are very different areas of study:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/ml-1/index_files/ml-1-overview.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-07-22-trial-2_files/ml-1-overview.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Image credit: 
 &lt;a href=&#34;https://vas3k.com/blog/machine_learning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning for Everyone&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The highlighted topics in the image above are those that I will touch on in future posts (since I have not learned about the remaining ones yet). There will also be additional topics to this crash course. You can find the full list below:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-2.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-3.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-4.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-5.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-6.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-7.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./list-8.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;credit&#34;&gt;Credit&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Part 1. Introduction to Statistical Learning&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.1. Supervised v/s. unsupervised learning&lt;/p&gt;
+&lt;p&gt;1.2. Regression v/s. classification&lt;/p&gt;
+&lt;p&gt;1.3. Quality of model fit&lt;/p&gt;
+&lt;p&gt;1.4. Bias-variance tradeoff&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Part 2. Linear Regression&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2.1. Simple linear regression&lt;/p&gt;
+&lt;p&gt;2.2. Multiple linear regression&lt;/p&gt;
+&lt;p&gt;2.3. K-nearest neighbours&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Part 3. Classification&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;3.1. Logistic regression&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Simple model (p = 2)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multiple model (p &amp;gt; 2)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multi-class logistic regression&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.2. Linear discriminant analysis (LDA)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bayes theorem&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LDA with p = 1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LDA with p &amp;gt;1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Quadratic discriminant analysis (QDA)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.3. K-nearest neighbours&lt;/p&gt;
+&lt;p&gt;3.4. Comparison of classification models&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Part 4. Resampling&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;4.1. Cross-validation (CV)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Validation set approach&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Leave-one-out-cross-validation (LOOCV)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;k-fold CV&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bootstrap&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Part 5. Regularisation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;5.1. Subset selection&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Best subset selection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stepwise selection&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;5.2. Shrinkage methods&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ridge regression&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lasso&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;5.3. Dimension reduction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Principal component analysis (PCA)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Partial least squares&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Part 6. Non-linearity&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;6.1. Polynomial regression&lt;/p&gt;
+&lt;p&gt;6.2. Step functions&lt;/p&gt;
+&lt;p&gt;6.3. Basis functions&lt;/p&gt;
+&lt;p&gt;6.4. Regression splines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Piecewise polynomial&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6.5. Smoothing splines&lt;/p&gt;
+&lt;p&gt;6.6. Local regression&lt;/p&gt;
+&lt;p&gt;6.7. Generalised additive models (GAMs)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;GAMs for regression&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GAMs for classificaiton&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Part 7. Tree models&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;7.1. Decision trees&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Regression trees&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Classification trees&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;7.2. Bagging&lt;/p&gt;
+&lt;p&gt;7.3. Boosting&lt;/p&gt;
+&lt;p&gt;7.4. Random forests&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Part 8. Support Vector Machines (SVMs)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;8.1. Maximal margin classifier&lt;/p&gt;
+&lt;p&gt;8.2. Support vector classfier&lt;/p&gt;
+&lt;p&gt;8.3. SVM&lt;/p&gt;
+&lt;p&gt;8.4. SVM with more than 2 classes&lt;/p&gt;
+&lt;br&gt; 
+&lt;p&gt;&lt;strong&gt;Part 9. Unsupervised Learning&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;9.1. Clustering methods&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;K-mean clustering&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hierarchical clustering&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;9.2. Principal component analysis (PCA)&lt;/p&gt;
+&lt;h2 id=&#34;credit&#34;&gt;&lt;strong&gt;Credit&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;I owe the majority of my machine learning knowledge and the inspiration for this course mainly to two sources:&lt;/p&gt;
 &lt;h2 id=&#34;1-monash-universitys-etc3250-introduction-to-machine-learning-unit-led-by-professor-di-cook&#34;&gt;1. Monash University&amp;rsquo;s ETC3250: Introduction to Machine Learning: unit led by Professor Di Cook:&lt;/h2&gt;
 &lt;ul&gt;
