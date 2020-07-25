@@ -37,7 +37,7 @@ Image credit: [Machine Learning for Everyone](https://vas3k.com/blog/machine_lea
 
 The highlighted topics in the image above are those that I will touch on in future posts (since I have not learned about the remaining ones yet). There will also be additional topics to this crash course. You can find the full list below:
 
-**Part 1. Introduction to Statistical Learning**
+[**Part 1. Introduction to Statistical Learning**](https://nhi-chelsea-le.netlify.app/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/)
 
 1.1. Supervised v/s. unsupervised learning 
 

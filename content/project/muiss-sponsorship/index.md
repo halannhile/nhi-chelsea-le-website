@@ -12,7 +12,7 @@ title: MUISS Sponsorship Project
 summary: A sponsorship project I do as the Treasurer for the [Monash University International Students' Service](https://www.facebook.com/MUISS.Monash/?ref=page_internal)
 url_code: ""
 url_custom: 
-url_pdf: "pdf/muiss-sponsorship.pdf"
+url_pdf: ""
 url_slides: ""
 url_video: ""
 ---

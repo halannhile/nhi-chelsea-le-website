@@ -7,7 +7,7 @@ categories: []
 tags:
   - Machine Learning
 subtitle: ''
-summary: ''
+summary: 'What is machine learning? Comparing supervised and unsupervised learning, regression and classification. Introducing the bias-variance tradeoff.'
 authors: []
 lastmod: '2020-07-23T19:24:27+10:00'
 featured: no
@@ -18,6 +18,52 @@ image:
 projects: []
 ---
 
-## **What is Statistical Learning?**
+## **What is Machine Learning (ML)?**
 
-Given the **input information X** (also called predictors, (independent) variables, features) and **output information Y** (also called response or dependent variable), 
+ML is not Artificial Intelligence (AI). It is in fact a sub-category of the AI universe. In simple terms, ML is defined as the process of providing the computer (i.e. the machine) with data for it to learn from, so that when presented with new and unseen data in the future, it can correctly **predict** a desirable response. 
+
+Notice the word 'predict' in bold here. **Any ML task can be simply interpreted as a prediction problem**. 
+
+E.g. 1. Given all the monthly sales metrics for a particular chips brand over the past 3 years, what is the predicted number of sales for next month?   
+
+E.g.2. Given a handwritten number, what digit is it (from 0 to 9)?
+
+E.g.3. When an email appears in your inbox, should it be classified as spam, given information such as the addresses you have blocked, advertisement words like promotion or discount, etc.?
+
+In statistical terms, ML describes the process below: 
+
+Given the **input information X** (also called predictors, (independent) variables, features) and **output information Y** (also called response or dependent variable), what is the function f that can help us arrive at Y from X, allowing for some random error?
+
+$$Y = f(X) + \epsilon$$
+
+* X variables can be either quantitative or categorical, or a combination of both.
+
+* Y can be either quantitative or categorical but not both. 
+
+* $\epsilon$ is the random, irreducible error that we cannot control nor reduce.
+
+The goal of ML is to estimate unknown function f that can help make use of the predictors X's and produce future predictions about the response Y that we are interested in.  
+
+However, it is worth noting that no matter how well we try to model this function, it will always contain some error specified by $\epsilon$ as defined above. So, what is the point of ML then, given that we can never get to the truth? 
+
+Consider the case where $\hat{Y} = \hat{f}(X)$ is the predicted value of unknown response Y using the known predictors X and our estimated function f. Let's also assume that $f(X)$ and $\hat{f}(X)$ are known. It follows that (see full derivation at the end of this post): 
+
+$$E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = [f(X) - \hat{f}(X)]^2 + Var(\epsilon)$$ 
+$$= Reducible \space Error + Irreducible \space Error$$
+Where: 
+
+* Reducible error is the squared difference between the actual value of Y, given by $f(X)$ and the predicted value of Y, given by $\hat{f}(X)$. 
+
+* Irreducible error is the variance of the error term, $Var(\epsilon)$.
+
+Hence, **ML aims to estimate function f such that the reducible error is minimised**. The irreducible 
+
+
+
+
+
+
+
+
+
+
