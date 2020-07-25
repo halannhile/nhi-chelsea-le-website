@@ -235,7 +235,7 @@
   
   <meta property="og:site_name" content="Nhi (Chelsea) Le">
   <meta property="og:url" content="/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/">
-  <meta property="og:title" content="Machine Learning Crash Course P.1: Introduction to Statistical Learning | Nhi (Chelsea) Le">
+  <meta property="og:title" content="Machine Learning Crash Course P.1: Introduction to Machine Learning | Nhi (Chelsea) Le">
   <meta property="og:description" content="What is machine learning? Comparing supervised and unsupervised learning, regression and classification. Introducing the bias-variance tradeoff."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
@@ -268,7 +268,7 @@
     "@type": "WebPage",
     "@id": "/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/"
   },
-  "headline": "Machine Learning Crash Course P.1: Introduction to Statistical Learning",
+  "headline": "Machine Learning Crash Course P.1: Introduction to Machine Learning",
   
   "datePublished": "2020-07-23T00:00:00Z",
   "dateModified": "2020-07-23T19:24:27+10:00",
@@ -304,7 +304,7 @@
 
 
 
-  <title>Machine Learning Crash Course P.1: Introduction to Statistical Learning | Nhi (Chelsea) Le</title>
+  <title>Machine Learning Crash Course P.1: Introduction to Machine Learning | Nhi (Chelsea) Le</title>
 
 </head>
 
@@ -608,7 +608,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Machine Learning Crash Course P.1: Introduction to Statistical Learning</h1>
+  <h1>Machine Learning Crash Course P.1: Introduction to Machine Learning</h1>
 
   
 
@@ -638,7 +638,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -679,12 +679,12 @@
 
 <div id="what-is-machine-learning-ml" class="section level2">
 <h2><strong>What is Machine Learning (ML)?</strong></h2>
-<p>ML is not Artificial Intelligence (AI). It is in fact a sub-category of the AI universe. In simple terms, ML is defined as the process of providing the computer (i.e. the machine) with data for it to learn from, so that when presented with new and unseen data in the future, it can correctly <strong>predict</strong> a desirable response.</p>
+<p>ML is not Artificial Intelligence (AI). It is in fact a sub-category of the AI universe. <span style="color:green">In simple terms, ML is defined as the process of providing the computer (i.e. the machine) with data for it to learn from, so that when presented with new and unseen data in the future, it can correctly <strong>predict</strong> a desirable response.</span></p>
 <p>Notice the word ‘predict’ in bold here. <strong>Any ML task can be simply interpreted as a prediction problem</strong>.</p>
-<p>E.g. 1. Given all the monthly sales metrics for a particular chips brand over the past 3 years, what is the predicted number of sales for next month?</p>
-<p>E.g.2. Given a handwritten number, what digit is it (from 0 to 9)?</p>
-<p>E.g.3. When an email appears in your inbox, should it be classified as spam, given information such as the addresses you have blocked, advertisement words like promotion or discount, etc.?</p>
-<p>In statistical terms, ML describes the process below:</p>
+<p><em>E.g. 1. Given all the monthly sales metrics for a particular chips brand over the past 3 years, what is the predicted number of sales for next month?</em></p>
+<p><em>E.g.2. Given a handwritten number, what digit is it (from 0 to 9)?</em></p>
+<p><em>E.g.3. When an email appears in your inbox, should it be classified as spam, given information such as the addresses you have blocked, advertisement words like promotion or discount, etc.?</em></p>
+<p><span style="color:green">In statistical terms, ML describes the process below:</span></p>
 <p>Given the <strong>input information X</strong> (also called predictors, (independent) variables, features) and <strong>output information Y</strong> (also called response or dependent variable), what is the function f that can help us arrive at Y from X, allowing for some random error?</p>
 <p><span class="math display">\[Y = f(X) + \epsilon\]</span></p>
 <ul>
@@ -695,14 +695,51 @@
 <p>The goal of ML is to estimate unknown function f that can help make use of the predictors X’s and produce future predictions about the response Y that we are interested in.</p>
 <p>However, it is worth noting that no matter how well we try to model this function, it will always contain some error specified by <span class="math inline">\(\epsilon\)</span> as defined above. So, what is the point of ML then, given that we can never get to the truth?</p>
 <p>Consider the case where <span class="math inline">\(\hat{Y} = \hat{f}(X)\)</span> is the predicted value of unknown response Y using the known predictors X and our estimated function f. Let’s also assume that <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known. It follows that (see full derivation at the end of this post):</p>
-<p><span class="math display">\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = [f(X) - \hat{f}(X)]^2 + Var(\epsilon)\]</span>
+<p><span class="math display">\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = [f(X) - \hat{f}(X)]^2 + Var(\epsilon) \space \space \space \space \space \space \space \space (1)\]</span>
 <span class="math display">\[= Reducible \space Error + Irreducible \space Error\]</span>
 Where:</p>
 <ul>
-<li><p>Reducible error is the squared difference between the actual value of Y (given by <span class="math inline">\(f(X)\)</span>) and the predicted value of Y (given by <span class="math inline">\(\hat{f}(X)\)</span>).</p></li>
-<li><p>Irreducible error is the variance of the error term, <span class="math inline">\(Var(\epsilon)\)</span></p></li>
+<li><p>Reducible error is the squared difference between the actual value of Y, given by <span class="math inline">\(f(X)\)</span> and the predicted value of Y, given by <span class="math inline">\(\hat{f}(X)\)</span>.</p></li>
+<li><p>Irreducible error is the variance of the error term, <span class="math inline">\(Var(\epsilon)\)</span>.</p></li>
 </ul>
-<p>Hence, <strong>ML aims to estimate function f such that the reducible error is minimised</strong>.</p>
+<p>Hence, <span style="color:green"><strong>ML aims to estimate function f such that the reducible error is minimised.</strong></span></p>
+</div>
+<div id="parametric-and-non-parametric-modeling" class="section level2">
+<h2><strong>Parametric and Non-parametric Modeling:</strong></h2>
+<p>To model the function f, we have two options:</p>
+<ol style="list-style-type: decimal">
+<li>Parametric methods:</li>
+</ol>
+<ul>
+<li><p>Make assumptions about the form of f (such as: linear, quadratic, piecewise polynomial, etc.).</p></li>
+<li><p>Advantage: reduces the problem down to estimating a set of parameters.</p></li>
+<li><p>Disadvantage: the assumed form of function might be incorrect, resulting in poor performance. This is the problem of <strong>high bias</strong> (to be discussed shortly).</p></li>
+</ul>
+<p><img src="parametric.png" alt="png" />
+<em>Image credit: <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">ISLR</a>, page 22</em></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Non-parametric methods:</li>
+</ol>
+<ul>
+<li><p>Make NO assumptions about the form of f. Instead, they try to find f that is as close to the data as possible but not perfectly close to avoid <strong>overfitting</strong>.</p></li>
+<li><p>Advantage: highly flexible and can fit a wide range of shapes.</p></li>
+<li><p>Disadvantage: Unlike parametric methods where the problem is reduced down to estimating only a set of parameters, non-parametric methods require a lot of data to accurately estimate an arbitrary f. Moreover, they are also more easily prone to <strong>high variance</strong> or <strong>overfitting</strong> (to be discussed shortly).</p></li>
+</ul>
+<p><img src="nonparametric.png" alt="png" />
+<em>Image credit: <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">ISLR</a>, page 24</em></p>
+</div>
+<div id="i.-supervised-and-unsupervised-learning" class="section level2">
+<h2><strong>I. Supervised and Unsupervised Learning:</strong></h2>
+<p><strong>Full derivation of (1):</strong></p>
+<p><span class="math display">\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2\]</span></p>
+<p><em>Where <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known and <span class="math inline">\(\epsilon\)</span> is unknown.
+We have that <span class="math inline">\(E(c) = c\)</span> where <span class="math inline">\(c\)</span> is a constant (i.e. is known).</em></p>
+<p><span class="math display">\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = E[(f(X)-\hat{f}(X)) + \epsilon]^2\]</span>
+<span class="math display">\[= E[f(X)-\hat{f}(X)]^2 + 2.E[f(X)-\hat{f}(X)].E(\epsilon) + E(\epsilon^2)\]</span>
+<em>We also made the assumption that <span class="math inline">\(\epsilon\)</span> is random, which is equivalent to <span class="math inline">\(\epsilon\)</span> ~ <span class="math inline">\(WN(0, \sigma_\epsilon^2)\)</span>. Hence <span class="math inline">\(E(\epsilon)=0\)</span>.</em></p>
+<p><span class="math display">\[=E[f(X)-\hat{f}(X)]^2 + E(\epsilon^2)\]</span>
+<em>We have: $Var() = E(^2) - [E()]^2 = E(^2) $ because <span class="math inline">\(E(\epsilon) = 0\)</span>. And because <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known constants:</em></p>
+<p><span class="math display">\[= [f(X) - \hat{f}(X)]^2 + Var(\epsilon)\]</span></p>
 </div>
 
     </div>
@@ -732,7 +769,7 @@ Where:</p>
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;text=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Statistical%20Learning" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;text=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Machine%20Learning" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -745,7 +782,7 @@ Where:</p>
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;t=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Statistical%20Learning" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;t=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Machine%20Learning" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -758,7 +795,7 @@ Where:</p>
       
       
       <li>
-        <a href="mailto:?subject=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Statistical%20Learning&amp;body=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Machine%20Learning&amp;body=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -771,7 +808,7 @@ Where:</p>
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;title=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Statistical%20Learning" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;title=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Machine%20Learning" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -784,7 +821,7 @@ Where:</p>
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Statistical%20Learning%20/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Machine%20Learning%20/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -797,7 +834,7 @@ Where:</p>
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;title=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Statistical%20Learning" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/&amp;title=Machine%20Learning%20Crash%20Course%20P.1:%20Introduction%20to%20Machine%20Learning" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

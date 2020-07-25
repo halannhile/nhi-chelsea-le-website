@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>Machine Learning Crash Course P.1: Introduction to Statistical Learning</title>
+      <title>Machine Learning Crash Course P.1: Introduction to Machine Learning</title>
       <link>/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/</link>
       <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/post/machine-learning-crash-course-p-1-introduction-to-statistical-learning/</guid>
@@ -22,12 +22,12 @@
 
 &lt;div id=&#34;what-is-machine-learning-ml&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;strong&gt;What is Machine Learning (ML)?&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;ML is not Artificial Intelligence (AI). It is in fact a sub-category of the AI universe. In simple terms, ML is defined as the process of providing the computer (i.e. the machine) with data for it to learn from, so that when presented with new and unseen data in the future, it can correctly &lt;strong&gt;predict&lt;/strong&gt; a desirable response.&lt;/p&gt;
+&lt;p&gt;ML is not Artificial Intelligence (AI). It is in fact a sub-category of the AI universe. &lt;span style=&#34;color:green&#34;&gt;In simple terms, ML is defined as the process of providing the computer (i.e. the machine) with data for it to learn from, so that when presented with new and unseen data in the future, it can correctly &lt;strong&gt;predict&lt;/strong&gt; a desirable response.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Notice the word ‘predict’ in bold here. &lt;strong&gt;Any ML task can be simply interpreted as a prediction problem&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;E.g. 1. Given all the monthly sales metrics for a particular chips brand over the past 3 years, what is the predicted number of sales for next month?&lt;/p&gt;
-&lt;p&gt;E.g.2. Given a handwritten number, what digit is it (from 0 to 9)?&lt;/p&gt;
-&lt;p&gt;E.g.3. When an email appears in your inbox, should it be classified as spam, given information such as the addresses you have blocked, advertisement words like promotion or discount, etc.?&lt;/p&gt;
-&lt;p&gt;In statistical terms, ML describes the process below:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;E.g. 1. Given all the monthly sales metrics for a particular chips brand over the past 3 years, what is the predicted number of sales for next month?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;E.g.2. Given a handwritten number, what digit is it (from 0 to 9)?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;E.g.3. When an email appears in your inbox, should it be classified as spam, given information such as the addresses you have blocked, advertisement words like promotion or discount, etc.?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:green&#34;&gt;In statistical terms, ML describes the process below:&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Given the &lt;strong&gt;input information X&lt;/strong&gt; (also called predictors, (independent) variables, features) and &lt;strong&gt;output information Y&lt;/strong&gt; (also called response or dependent variable), what is the function f that can help us arrive at Y from X, allowing for some random error?&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Y = f(X) + \epsilon\]&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -38,14 +38,51 @@
 &lt;p&gt;The goal of ML is to estimate unknown function f that can help make use of the predictors X’s and produce future predictions about the response Y that we are interested in.&lt;/p&gt;
 &lt;p&gt;However, it is worth noting that no matter how well we try to model this function, it will always contain some error specified by &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; as defined above. So, what is the point of ML then, given that we can never get to the truth?&lt;/p&gt;
 &lt;p&gt;Consider the case where &lt;span class=&#34;math inline&#34;&gt;\(\hat{Y} = \hat{f}(X)\)&lt;/span&gt; is the predicted value of unknown response Y using the known predictors X and our estimated function f. Let’s also assume that &lt;span class=&#34;math inline&#34;&gt;\(f(X)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat{f}(X)\)&lt;/span&gt; are known. It follows that (see full derivation at the end of this post):&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = [f(X) - \hat{f}(X)]^2 + Var(\epsilon)\]&lt;/span&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = [f(X) - \hat{f}(X)]^2 + Var(\epsilon) \space \space \space \space \space \space \space \space (1)\]&lt;/span&gt;
 &lt;span class=&#34;math display&#34;&gt;\[= Reducible \space Error + Irreducible \space Error\]&lt;/span&gt;
 Where:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Reducible error is the squared difference between the actual value of Y (given by &lt;span class=&#34;math inline&#34;&gt;\(f(X)\)&lt;/span&gt;) and the predicted value of Y (given by &lt;span class=&#34;math inline&#34;&gt;\(\hat{f}(X)\)&lt;/span&gt;).&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Irreducible error is the variance of the error term, &lt;span class=&#34;math inline&#34;&gt;\(Var(\epsilon)\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reducible error is the squared difference between the actual value of Y, given by &lt;span class=&#34;math inline&#34;&gt;\(f(X)\)&lt;/span&gt; and the predicted value of Y, given by &lt;span class=&#34;math inline&#34;&gt;\(\hat{f}(X)\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Irreducible error is the variance of the error term, &lt;span class=&#34;math inline&#34;&gt;\(Var(\epsilon)\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Hence, &lt;strong&gt;ML aims to estimate function f such that the reducible error is minimised&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Hence, &lt;span style=&#34;color:green&#34;&gt;&lt;strong&gt;ML aims to estimate function f such that the reducible error is minimised.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;parametric-and-non-parametric-modeling&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;Parametric and Non-parametric Modeling:&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;To model the function f, we have two options:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Parametric methods:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Make assumptions about the form of f (such as: linear, quadratic, piecewise polynomial, etc.).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Advantage: reduces the problem down to estimating a set of parameters.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Disadvantage: the assumed form of function might be incorrect, resulting in poor performance. This is the problem of &lt;strong&gt;high bias&lt;/strong&gt; (to be discussed shortly).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;parametric.png&#34; alt=&#34;png&#34; /&gt;
+&lt;em&gt;Image credit: &lt;a href=&#34;http://faculty.marshall.usc.edu/gareth-james/ISL/&#34;&gt;ISLR&lt;/a&gt;, page 22&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Non-parametric methods:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Make NO assumptions about the form of f. Instead, they try to find f that is as close to the data as possible but not perfectly close to avoid &lt;strong&gt;overfitting&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Advantage: highly flexible and can fit a wide range of shapes.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Disadvantage: Unlike parametric methods where the problem is reduced down to estimating only a set of parameters, non-parametric methods require a lot of data to accurately estimate an arbitrary f. Moreover, they are also more easily prone to &lt;strong&gt;high variance&lt;/strong&gt; or &lt;strong&gt;overfitting&lt;/strong&gt; (to be discussed shortly).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;nonparametric.png&#34; alt=&#34;png&#34; /&gt;
+&lt;em&gt;Image credit: &lt;a href=&#34;http://faculty.marshall.usc.edu/gareth-james/ISL/&#34;&gt;ISLR&lt;/a&gt;, page 24&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;i.-supervised-and-unsupervised-learning&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;I. Supervised and Unsupervised Learning:&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Full derivation of (1):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Where &lt;span class=&#34;math inline&#34;&gt;\(f(X)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat{f}(X)\)&lt;/span&gt; are known and &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; is unknown.
+We have that &lt;span class=&#34;math inline&#34;&gt;\(E(c) = c\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(c\)&lt;/span&gt; is a constant (i.e. is known).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = E[(f(X)-\hat{f}(X)) + \epsilon]^2\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[= E[f(X)-\hat{f}(X)]^2 + 2.E[f(X)-\hat{f}(X)].E(\epsilon) + E(\epsilon^2)\]&lt;/span&gt;
+&lt;em&gt;We also made the assumption that &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; is random, which is equivalent to &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; ~ &lt;span class=&#34;math inline&#34;&gt;\(WN(0, \sigma_\epsilon^2)\)&lt;/span&gt;. Hence &lt;span class=&#34;math inline&#34;&gt;\(E(\epsilon)=0\)&lt;/span&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[=E[f(X)-\hat{f}(X)]^2 + E(\epsilon^2)\]&lt;/span&gt;
+&lt;em&gt;We have: $Var() = E(^2) - [E()]^2 = E(^2) $ because &lt;span class=&#34;math inline&#34;&gt;\(E(\epsilon) = 0\)&lt;/span&gt;. And because &lt;span class=&#34;math inline&#34;&gt;\(f(X)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\hat{f}(X)\)&lt;/span&gt; are known constants:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[= [f(X) - \hat{f}(X)]^2 + Var(\epsilon)\]&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
