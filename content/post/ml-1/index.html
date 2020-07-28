@@ -28,51 +28,62 @@ projects: []
 <p><em>E.g.2. Given a handwritten number, what digit is it (from 0 to 9)?</em></p>
 <p><em>E.g.3. When an email appears in your inbox, should it be classified as spam, given information such as the addresses you have blocked, advertisement words like promotion or discount, etc.?</em></p>
 <p><span style="color:green">In statistical terms, ML describes the process below:</span></p>
-<p>Given the <strong>input information X</strong> (also called predictors, (independent) variables, features) and <strong>output information Y</strong> (also called response or dependent variable), what is the function f that can help us arrive at Y from X, allowing for some random error?</p>
+<p>Given the <strong>input information X</strong> (also called predictors, (independent) variables, features) and <strong>output information Y</strong> (also called response or dependent variable), what is the function <span class="math inline">\(f\)</span> that can help us arrive at <span class="math inline">\(Y\)</span> from <span class="math inline">\(X\)</span>, allowing for some random error <span class="math inline">\(\epsilon\)</span>?</p>
 <p><span class="math display">\[Y = f(X) + \epsilon\]</span></p>
 <ul>
-<li><p>X variables can be either quantitative or categorical, or a combination of both.</p></li>
-<li><p>Y can be either quantitative or categorical but not both.</p></li>
+<li><p><span class="math inline">\(X\)</span> variables can be either quantitative or categorical, or a combination of both.</p></li>
+<li><p><span class="math inline">\(Y\)</span> can be either quantitative or categorical but not both.</p></li>
 <li><p><span class="math inline">\(\epsilon\)</span> is the random, irreducible error that we cannot control nor reduce.</p></li>
 </ul>
-<p>The goal of ML is to estimate unknown function f that can help make use of the predictors X’s and produce future predictions about the response Y that we are interested in.</p>
-<p>However, it is worth noting that no matter how well we try to model this function, it will always contain some error specified by <span class="math inline">\(\epsilon\)</span> as defined above. So, what is the point of ML then, given that we can never get to the truth?</p>
-<p>Consider the case where <span class="math inline">\(\hat{Y} = \hat{f}(X)\)</span> is the predicted value of unknown response Y using the known predictors X and our estimated function f. Let’s also assume that <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known. It follows that (see full derivation at the end of this post):</p>
+<p>The goal of ML is to estimate unknown function <span class="math inline">\(f\)</span> that can help make use of the predictors <span class="math inline">\(X&#39;s\)</span> and produce future predictions about the response <span class="math inline">\(Y\)</span> that we are interested in.</p>
+<p>However, it is worth noting that no matter how well we try to model this function <span class="math inline">\(f\)</span>, it will always contain some error specified by <span class="math inline">\(\epsilon\)</span> as defined above. So, what is the point of ML then, given that we can never get to the truth?</p>
+<p>Consider the case where <span class="math inline">\(\hat{Y} = \hat{f}(X)\)</span> is the predicted value of unknown response <span class="math inline">\(Y\)</span> using the known predictors <span class="math inline">\(X\)</span> and our estimated function <span class="math inline">\(f\)</span>. Let’s also assume that <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known. It follows that (see full derivation at the end of this post):</p>
 <p><span class="math display">\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = [f(X) - \hat{f}(X)]^2 + Var(\epsilon) \space \space \space \space \space \space \space \space (1)\]</span>
 <span class="math display">\[= Reducible \space Error + Irreducible \space Error\]</span>
 Where:</p>
 <ul>
-<li><p>Reducible error is the squared difference between the actual value of Y, given by <span class="math inline">\(f(X)\)</span> and the predicted value of Y, given by <span class="math inline">\(\hat{f}(X)\)</span>.</p></li>
+<li><p>Reducible error is the squared difference between the actual value of <span class="math inline">\(Y\)</span>, given by <span class="math inline">\(f(X)\)</span> and the predicted value of <span class="math inline">\(Y\)</span>, given by <span class="math inline">\(\hat{f}(X)\)</span>.</p></li>
 <li><p>Irreducible error is the variance of the error term, <span class="math inline">\(Var(\epsilon)\)</span>.</p></li>
 </ul>
-<p>Hence, <span style="color:green"><strong>ML aims to estimate function f such that the reducible error is minimised.</strong></span></p>
+<p>Hence, <span style="color:green"><strong>ML aims to estimate function <span class="math inline">\(f\)</span> such that the reducible error is minimised.</strong></span></p>
 </div>
 <div id="parametric-and-non-parametric-modeling" class="section level2">
 <h2><strong>Parametric and Non-parametric Modeling:</strong></h2>
-<p>To model the function f, we have two options:</p>
-<ol style="list-style-type: decimal">
-<li>Parametric methods:</li>
-</ol>
+<p>To model the function <span class="math inline">\(f\)</span>, we have two options:</p>
+<p><strong>1. Parametric methods:</strong></p>
 <ul>
-<li><p>Make assumptions about the form of f (such as: linear, quadratic, piecewise polynomial, etc.).</p></li>
+<li><p>Make assumptions about the form of <span class="math inline">\(f\)</span> (such as: linear, quadratic, piecewise polynomial, etc.).</p></li>
 <li><p>Advantage: reduces the problem down to estimating a set of parameters.</p></li>
 <li><p>Disadvantage: the assumed form of function might be incorrect, resulting in poor performance. This is the problem of <strong>high bias</strong> (to be discussed shortly).</p></li>
 </ul>
 <p><img src="parametric.png" alt="png" />
 <em>Image credit: <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">ISLR</a>, page 22</em></p>
-<ol start="2" style="list-style-type: decimal">
-<li>Non-parametric methods:</li>
-</ol>
+<p><strong>2. Non-parametric methods:</strong></p>
 <ul>
-<li><p>Make NO assumptions about the form of f. Instead, they try to find f that is as close to the data as possible but not perfectly close to avoid <strong>overfitting</strong>.</p></li>
+<li><p>Make NO assumptions about the form of <span class="math inline">\(f\)</span>. Instead, they try to find f that is as close to the data as possible but not perfectly close to avoid <strong>overfitting</strong>.</p></li>
 <li><p>Advantage: highly flexible and can fit a wide range of shapes.</p></li>
-<li><p>Disadvantage: Unlike parametric methods where the problem is reduced down to estimating only a set of parameters, non-parametric methods require a lot of data to accurately estimate an arbitrary f. Moreover, they are also more easily prone to <strong>high variance</strong> or <strong>overfitting</strong> (to be discussed shortly).</p></li>
+<li><p>Disadvantage: Unlike parametric methods where the problem is reduced down to estimating only a set of parameters, non-parametric methods require a lot of data to accurately estimate an arbitrary <span class="math inline">\(f\)</span>. Moreover, they are also prone to <strong>high variance</strong> or <strong>overfitting</strong> (to be discussed shortly).</p></li>
 </ul>
 <p><img src="nonparametric.png" alt="png" />
 <em>Image credit: <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/">ISLR</a>, page 24</em></p>
+<p><strong>Which method to choose: parametric or non-parametric?</strong></p>
+<p>The answer to this question depends largely on the problem at hand, but as a rough guide:</p>
+<ul>
+<li><p>When <strong>inference</strong> is the goal, we tend to prefer <strong>parametric methods</strong> due to their interpretability. That is, when we are interested in the relationship between the predictors <span class="math inline">\(X\)</span> and response <span class="math inline">\(Y\)</span> (such as: Which predictors are related to <span class="math inline">\(Y\)</span> and to what extent? Can the relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> be summarised by a linearity assumption, or is it more complicated?) parametric methods are a good choice because they make the explicit assumption about the particular form of <span class="math inline">\(f\)</span>.</p></li>
+<li><p>When <strong>prediction</strong> is the goal, <strong>non-parametric methods</strong> might produce more accurate results. That is, when we are only interested in obtaining as accurate predictions as possible but not in the <span class="math inline">\(X\)</span> - <span class="math inline">\(Y\)</span> relationship at all, the high flexibility of non-parametric models might be preferable.</p></li>
+<li><p>Interestingly, in some cases, even when prediction is the goal, <strong>parametric methods</strong> can prove to be more successful than their non-parametric counterparts. This might sound conflicting, but it has a lot to do with the bias-variance trade-off that will be discussed shortly.</p></li>
+</ul>
 </div>
 <div id="i.-supervised-and-unsupervised-learning" class="section level2">
 <h2><strong>I. Supervised and Unsupervised Learning:</strong></h2>
+<p>The overarching ML field can be divided into two subgroups: supervised and unsupervised learning, the definitions of which are surprisingly very simple to understand.</p>
+<p><strong>1. Supervised learning:</strong></p>
+<ul>
+<li><p>Is when we give labeled data for the machine to learn from.</p></li>
+<li><p>In statistical terminology: in the training data, for each observation <span class="math inline">\(x_i\)</span>, there is a corresponding response <span class="math inline">\(y_i\)</span>.</p></li>
+<li><p>This type of learning is called ‘supervised’ because similar to having a supervisor who will guide you in the learning process with feedback for both when you succeed or fail to do a task, the ML model will be trained on labeled data. Hence, when it practices predicting the response for the training data, it instantly knows when the prediction is correct or not thanks to the label. On the basis of this feedback, the model is further finetuned.</p></li>
+</ul>
+<p><strong>2. Unsupervised learning:</strong></p>
 <p><strong>Full derivation of (1):</strong></p>
 <p><span class="math display">\[E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2\]</span></p>
 <p><em>Where <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known and <span class="math inline">\(\epsilon\)</span> is unknown.
@@ -81,6 +92,6 @@ We have that <span class="math inline">\(E(c) = c\)</span> where <span class="ma
 <span class="math display">\[= E[f(X)-\hat{f}(X)]^2 + 2.E[f(X)-\hat{f}(X)].E(\epsilon) + E(\epsilon^2)\]</span>
 <em>We also made the assumption that <span class="math inline">\(\epsilon\)</span> is random, which is equivalent to <span class="math inline">\(\epsilon\)</span> ~ <span class="math inline">\(WN(0, \sigma_\epsilon^2)\)</span>. Hence <span class="math inline">\(E(\epsilon)=0\)</span>.</em></p>
 <p><span class="math display">\[=E[f(X)-\hat{f}(X)]^2 + E(\epsilon^2)\]</span>
-<em>We have: $Var() = E(^2) - [E()]^2 = E(^2) $ because <span class="math inline">\(E(\epsilon) = 0\)</span>. And because <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known constants:</em></p>
+<em>We have: <span class="math inline">\(Var(\epsilon) = E(\epsilon^2) - [E(\epsilon)]^2 = E(\epsilon^2)\)</span> because <span class="math inline">\(E(\epsilon) = 0\)</span>. And because <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(\hat{f}(X)\)</span> are known constants:</em></p>
 <p><span class="math display">\[= [f(X) - \hat{f}(X)]^2 + Var(\epsilon)\]</span></p>
 </div>

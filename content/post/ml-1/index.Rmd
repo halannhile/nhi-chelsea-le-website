@@ -33,39 +33,39 @@ Notice the word 'predict' in bold here. **Any ML task can be simply interpreted 
 <span style="color:green">In statistical terms, ML describes the process below:</span>
 
 
-Given the **input information X** (also called predictors, (independent) variables, features) and **output information Y** (also called response or dependent variable), what is the function f that can help us arrive at Y from X, allowing for some random error?
+Given the **input information X** (also called predictors, (independent) variables, features) and **output information Y** (also called response or dependent variable), what is the function $f$ that can help us arrive at $Y$ from $X$, allowing for some random error $\epsilon$?
 
 $$Y = f(X) + \epsilon$$
 
-* X variables can be either quantitative or categorical, or a combination of both.
+* $X$ variables can be either quantitative or categorical, or a combination of both.
 
-* Y can be either quantitative or categorical but not both. 
+* $Y$ can be either quantitative or categorical but not both. 
 
 * $\epsilon$ is the random, irreducible error that we cannot control nor reduce.
 
-The goal of ML is to estimate unknown function f that can help make use of the predictors X's and produce future predictions about the response Y that we are interested in.  
+The goal of ML is to estimate unknown function $f$ that can help make use of the predictors $X's$ and produce future predictions about the response $Y$ that we are interested in.  
 
-However, it is worth noting that no matter how well we try to model this function, it will always contain some error specified by $\epsilon$ as defined above. So, what is the point of ML then, given that we can never get to the truth? 
+However, it is worth noting that no matter how well we try to model this function $f$, it will always contain some error specified by $\epsilon$ as defined above. So, what is the point of ML then, given that we can never get to the truth? 
 
-Consider the case where $\hat{Y} = \hat{f}(X)$ is the predicted value of unknown response Y using the known predictors X and our estimated function f. Let's also assume that $f(X)$ and $\hat{f}(X)$ are known. It follows that (see full derivation at the end of this post): 
+Consider the case where $\hat{Y} = \hat{f}(X)$ is the predicted value of unknown response $Y$ using the known predictors $X$ and our estimated function $f$. Let's also assume that $f(X)$ and $\hat{f}(X)$ are known. It follows that (see full derivation at the end of this post): 
 
 $$E(Y - \hat{Y}) = E[f(X) + \epsilon - \hat{f}(X)]^2 = [f(X) - \hat{f}(X)]^2 + Var(\epsilon) \space \space \space \space \space \space \space \space (1)$$ 
 $$= Reducible \space Error + Irreducible \space Error$$
 Where: 
 
-* Reducible error is the squared difference between the actual value of Y, given by $f(X)$ and the predicted value of Y, given by $\hat{f}(X)$. 
+* Reducible error is the squared difference between the actual value of $Y$, given by $f(X)$ and the predicted value of $Y$, given by $\hat{f}(X)$. 
 
 * Irreducible error is the variance of the error term, $Var(\epsilon)$.
 
-Hence, <span style="color:green">**ML aims to estimate function f such that the reducible error is minimised.**</span>
+Hence, <span style="color:green">**ML aims to estimate function $f$ such that the reducible error is minimised.**</span>
 
 ## **Parametric and Non-parametric Modeling:**
 
-To model the function f, we have two options: 
+To model the function $f$, we have two options: 
 
-1. Parametric methods: 
+**1. Parametric methods:**
 
-* Make assumptions about the form of f (such as: linear, quadratic, piecewise polynomial, etc.).
+* Make assumptions about the form of $f$ (such as: linear, quadratic, piecewise polynomial, etc.).
 
 * Advantage: reduces the problem down to estimating a set of parameters. 
 
@@ -74,18 +74,40 @@ To model the function f, we have two options:
 ![png](./parametric.png)
 *Image credit: [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/), page 22*
 
-2. Non-parametric methods: 
+**2. Non-parametric methods:**
 
-* Make NO assumptions about the form of f. Instead, they try to find f that is as close to the data as possible but not perfectly close to avoid **overfitting**. 
+* Make NO assumptions about the form of $f$. Instead, they try to find f that is as close to the data as possible but not perfectly close to avoid **overfitting**. 
 
 * Advantage: highly flexible and can fit a wide range of shapes. 
 
-* Disadvantage: Unlike parametric methods where the problem is reduced down to estimating only a set of parameters, non-parametric methods require a lot of data to accurately estimate an arbitrary f. Moreover, they are also more easily prone to **high variance** or **overfitting** (to be discussed shortly).
+* Disadvantage: Unlike parametric methods where the problem is reduced down to estimating only a set of parameters, non-parametric methods require a lot of data to accurately estimate an arbitrary $f$. Moreover, they are also prone to **high variance** or **overfitting** (to be discussed shortly).
 
 ![png](./nonparametric.png)
 *Image credit: [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/), page 24*
 
+**Which method to choose: parametric or non-parametric?**
+
+The answer to this question depends largely on the problem at hand, but as a rough guide: 
+
+* When **inference** is the goal, we tend to prefer **parametric methods** due to their interpretability. That is, when we are interested in the relationship between the predictors $X$ and response $Y$ (such as: Which predictors are related to $Y$ and to what extent? Can the relationship between $X$ and $Y$ be summarised by a linearity assumption, or is it more complicated?) parametric methods are a good choice because they make the explicit assumption about the particular form of $f$. 
+
+* When **prediction** is the goal, **non-parametric methods** might produce more accurate results. That is, when we are only interested in obtaining as accurate predictions as possible but not in the $X$ - $Y$ relationship at all, the high flexibility of non-parametric models might be preferable. 
+
+* Interestingly, in some cases, even when prediction is the goal, **parametric methods** can prove to be more successful than their non-parametric counterparts. This might sound conflicting, but it has a lot to do with the bias-variance trade-off that will be discussed shortly.
+
 ## **I. Supervised and Unsupervised Learning:**
+
+The overarching ML field can be divided into two subgroups: supervised and unsupervised learning, the definitions of which are surprisingly very simple to understand. 
+
+**1. Supervised learning:**
+
+* Is when we give labeled data for the machine to learn from. 
+
+* In statistical terminology: in the training data, for each observation $x_i$, there is a corresponding response $y_i$. 
+
+* This type of learning is called 'supervised' because similar to having a supervisor who will guide you in the learning process with feedback for both when you succeed or fail to do a task, the ML model will be trained on labeled data. Hence, when it practices predicting the response for the training data, it instantly knows when the prediction is correct or not thanks to the label. On the basis of this feedback, the model is further finetuned. 
+
+**2. Unsupervised learning:**
 
 
 
@@ -101,7 +123,7 @@ $$= E[f(X)-\hat{f}(X)]^2 + 2.E[f(X)-\hat{f}(X)].E(\epsilon) + E(\epsilon^2)$$
 *We also made the assumption that $\epsilon$ is random, which is equivalent to $\epsilon$ ~ $WN(0, \sigma_\epsilon^2)$. Hence $E(\epsilon)=0$.*
 
 $$=E[f(X)-\hat{f}(X)]^2 + E(\epsilon^2)$$
-*We have: $Var(\epsilon) = E(\epsilon^2) - [E(\epsilon)]^2 = E(\epsilon^2) $ because $E(\epsilon) = 0$. And because $f(X)$ and $\hat{f}(X)$ are known constants:*
+*We have: $Var(\epsilon) = E(\epsilon^2) - [E(\epsilon)]^2 = E(\epsilon^2)$ because $E(\epsilon) = 0$. And because $f(X)$ and $\hat{f}(X)$ are known constants:*
 
 $$= [f(X) - \hat{f}(X)]^2 + Var(\epsilon)$$
 
